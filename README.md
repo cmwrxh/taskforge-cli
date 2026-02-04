@@ -1,15 +1,26 @@
 # TaskForge CLI
 
-A modern, powerful CLI task manager built with TypeScript and Node.js.
+A clean, modern, and powerful command-line task manager built with TypeScript + Node.js.
 
-## Overview
-This tool allows users to add, list, mark done, and delete tasks from the command line. Features include:
-- Persistent storage in JSON file
-- Colorful output with tables
-- Easy global installation via npm
+Features:
+- Add, list, complete, and delete tasks
+- Persistent storage in `~/.taskforge/tasks.json`
+- Colorful output with status icons and formatted tables
+- Global install support (`npm install -g .`)
+- Simple, readable code with proper error handling
 
-Built in 9 clean commits for a professional portfolio demo.
+## Installation (local development / global use)
 
-## Setup (Coming Soon)
-- Node.js v18+
-- npm install -g .
+```bash
+# Clone or download the repo
+git clone https://github.com/cmwrxh/taskforge-cli.git
+cd taskforge-cli
+
+# Install dependencies
+npm install
+
+# Build TypeScript → JavaScript
+npm run build
+
+# Install globally so you can run `taskforge` from anywhere
+npm install -g .
